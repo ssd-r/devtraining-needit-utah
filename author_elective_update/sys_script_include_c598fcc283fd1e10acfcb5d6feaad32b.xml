@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.NeedItUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Utils Script Include for the NeedIt application.</description>
+        <mobile_callable>false</mobile_callable>
+        <name>NeedItUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var NeedItUtils = Class.create();
+NeedItUtils.prototype = {
+    initialize: function() {
+    },
+
+	isDatePast: function(strDate){
+    // Create GlideDateTime objects for the current date and the passed in date
+    var rightnow = new GlideDateTime();
+    var testdate = new GlideDateTime(strDate);
+    
+    // If the testdate is before rightnow, return true, else return false
+    if (testdate.before(rightnow)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
+
+    type: 'NeedItUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:45:10</sys_created_on>
+        <sys_id>c598fcc283fd1e10acfcb5d6feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedItUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_c598fcc283fd1e10acfcb5d6feaad32b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:45:10</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="DELETE">
+        <id>c598fcc283fd1e10acfcb5d6feaad32b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:45:10</sys_created_on>
+        <sys_id>a9e8b8c283fd1e10acfcb5d6feaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:45:10</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>650a00c11b1af1d8168f4089bd4bcb6b</instance_id>
+        <instance_name>dev200968</instance_name>
+        <name>sys_script_include_c598fcc283fd1e10acfcb5d6feaad32b</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.NeedItUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Utils Script Include for the NeedIt application.&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;NeedItUtils&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var NeedItUtils = Class.create();
+NeedItUtils.prototype = {
+    initialize: function() {
+    },
+
+	isDatePast: function(strDate){
+    // Create GlideDateTime objects for the current date and the passed in date
+    var rightnow = new GlideDateTime();
+    var testdate = new GlideDateTime(strDate);
+    
+    // If the testdate is before rightnow, return true, else return false
+    if (testdate.before(rightnow)) {
+      return true;
+    }
+    else {
+      return false;
+    }
+  },
+
+    type: 'NeedItUtils'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-12 09:45:10&lt;/sys_created_on&gt;&lt;sys_id&gt;c598fcc283fd1e10acfcb5d6feaad32b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedItUtils&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_c598fcc283fd1e10acfcb5d6feaad32b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-12 09:45:10&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;c598fcc283fd1e10acfcb5d6feaad32b&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-12 09:45:10&lt;/sys_created_on&gt;&lt;sys_id&gt;a9e8b8c283fd1e10acfcb5d6feaad391&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-12 09:45:10&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>587266545</payload_hash>
+        <record_name>NeedItUtils</record_name>
+        <reverted_from/>
+        <source>4adb8fe983b1da10acfcb5d6feaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:45:11</sys_created_on>
+        <sys_id>f5e8fcc283fd1e10acfcb5d6feaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1931fc344a40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:45:11</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f9e8fcc2c5fd1e102f1fcfac6edb8f3a</update_guid>
+        <update_guid_history>f9e8fcc2c5fd1e102f1fcfac6edb8f3a:587266545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:59:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>327926dd5b7e49c6a969d89ab645adf9</sys_id>
+        <sys_metadata>c598fcc283fd1e10acfcb5d6feaad32b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedItUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_c598fcc283fd1e10acfcb5d6feaad32b</sys_update_name>
+        <sys_update_version display_value="sys_script_include_c598fcc283fd1e10acfcb5d6feaad32b">f5e8fcc283fd1e10acfcb5d6feaad33b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:59:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
